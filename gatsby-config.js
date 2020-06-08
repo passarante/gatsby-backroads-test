@@ -7,9 +7,9 @@ module.exports = {
     title: "Backroads",
     description: "Explore awesome trip advisor",
     author: "@johndoe",
-    data: {
-      age: 26,
-    },
+    twitterUsername: "@passarante",
+    image: "/defaultBcg.jpeg",
+    siteUrl: "https://gny-gatsby-backroads.netlify.app/",
   },
   /* Your site config here */
   plugins: [
@@ -28,9 +28,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-playground`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
