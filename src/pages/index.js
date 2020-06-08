@@ -12,21 +12,19 @@ import SEO from "../components/SEO"
 export default function Home({ data }) {
   return (
     <Layout>
-      <SEO title="home" description="this is description">
-        <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
-          <Banner
-            title="continue exploring"
-            info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, et!"
-          >
-            <Anilink fade to="/tours" className="btn-white">
-              explore tours
-            </Anilink>
-          </Banner>
-        </StyledHero>
-        <About />
-        <Services />
-        <FeaturedTours />
-      </SEO>
+      <StyledHero home={true} img={data.defaultBcg.childImageSharp.fluid}>
+        <Banner
+          title="continue exploring"
+          info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, et!"
+        >
+          <Anilink fade to="/tours" className="btn-white">
+            explore tours
+          </Anilink>
+        </Banner>
+      </StyledHero>
+      <About />
+      <Services />
+      <FeaturedTours />
     </Layout>
   )
 }
